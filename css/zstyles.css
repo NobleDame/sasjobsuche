@@ -1,0 +1,172 @@
+body{
+    font-size: 20px;
+}
+#fixedbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 10vh;
+    background-color: royalblue;
+    z-index: 1000;
+}
+#headline{
+    position: absolute;
+    padding: 2vh;
+    font-size: 6vh;
+    left: 2vh;
+}
+#account-element{
+    position: relative;
+    height: 100%;
+    /*width hat die gleiche pixel-länge wie height -> Quadratisch*/
+    /*background-color: aqua;*/
+    z-index: 1000;
+}
+#account-element img{
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+}
+
+#searchbar{
+    position: fixed;
+    width: 100%;
+    background-color: blueviolet;
+    height: 7%;
+    z-index: 1000;
+}
+
+#fixed-padding-expander{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+#all-info-container{
+    width: 80vw;
+    margin: 0 auto; /* Zentriert das Parent-Element */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert alle Child-Elemente horizontal */
+}
+
+.company-info-container{
+
+    position: relative;
+    left: -1vw;
+    width: 80vw;
+    margin-bottom: 20px;
+    background-color: aqua;
+    padding: 1.5vw 3.5vw 1.5vw 1.5vw;
+    border-radius: 10px;
+}
+
+.company-info-box{
+    width: 80vw;
+    background-color: rgb(0, 110, 255);
+    padding: 2vw 0px 2vw 2vw;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.company-name{
+    margin:auto;
+    padding: 10px;
+}
+.company-description{
+    margin:auto;
+    padding: 10px;
+    position: relative;
+    left: 0vw;
+}
+.hourlyrate{
+    margin:auto;
+    padding: 10px;
+    position: relative;
+    left: 0vw;
+}
+
+.company-more-button{
+    width: 35vw;
+    height: 50px;
+    background-color: rgb(252, 108, 108);
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    top: 0px;
+    border: 0;
+    transition: background-color 0.5s ease; /* Übergang der Hintergrundfarbe */
+    font-size: 20px;
+}
+.company-more-button:hover{
+    background-color: rgb(252, 226, 108);
+}
+#result-count{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    display: inline;
+    margin: 0; /* Entfernt Standard-Margen */
+}
+  
+.free-places{ 
+    font-size: 30px;
+    position: relative;
+    padding: 10px;
+    padding-left: 15vw;
+    padding-bottom: 0px;
+}
+.company-bottom-bar{
+    display: flex;
+}
+
+/* Ab einer Bildschirmbreite von 768px (für PCs und größere Geräte) */
+@media (min-width: 768px) {
+    div {
+        font-size: 32px; /* Schriftgröße in divs wird auf dem PC verdoppelt */
+    }
+    .company-more-button{
+        font-size: 32px; /* Schriftgröße in divs wird auf dem PC verdoppelt */
+    }
+}
+
+.job-details{
+    padding-left: 4vw;;
+    padding-top: 1vw;
+}
+
+.Jobcounter{
+    padding-left: 2vw;
+    display: inline;
+}
+
+.Jobcounter p{
+    display: inline;
+}
+
+.job-info-container{
+
+    position: relative;
+    left: -1vw;
+    width: 80vw;
+    margin-bottom: 20px;
+    background-color: aqua;
+    padding: 3vw 3.5vw 3vw 3vw;
+    border-radius: 10px;
+}
+
+.kündigung-button{
+    background-color: rgb(252, 108, 108);
+    width: 104.5px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    margin-top: 25px;
+}

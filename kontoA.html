@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/zstyles.css">
+    <title>Document</title>
+</head>
+<body onload="updateCSS(); buildKontoA();">
+
+    <div id="fixedbar">
+        <div id="headline">Jobsuche</div>
+        <div id="account-element">
+            <a href="index.html"><img src="img/HomeIcon.png" alt="HomeIcon"></a>
+        </div>
+    </div>
+    <div id="fixed-padding-expander"></div>
+
+
+
+    <div id="all-info-container">
+        <p id="jobHeadline" style="padding-bottom: 10px; font-size: 4.5vh;">Deine Jobs</p>
+        <div class="job-info-container" id="ContoinerOne">
+            <div class="Jobcounter" id="Jobcounter">Erster Job:</div>
+                <div class="job-details" id="first-job-name">kein Job</div>
+                <div class="job-details"><p>Gehalt: </p><p id="first-job-hourly-rate">kein Job</p></div>
+                <button class="kündigung-button" >Kündigen</button>
+        </div>
+
+        <p id="bewerbungHeadline" style="padding-bottom: 10px;  font-size: 4.5vh;">Deine Bewerbung</p>
+        <div class="job-info-container"  id="ContainerTwo">
+                <div class="job-details" id="first-bewerbung-name" style="padding-left: 10px;">keine Bewerbung</div>
+                <div class="job-details"><p>Gehalt: </p><p id="first-bewerbung-hourly-rate">kein Job</p></div>
+                <br>
+                <p style="padding-left: 5px; display:block;">Deine Bewerbungen:</p>
+                <div id="bewerbung-details" style="padding-left: 10px;"><p>Du hast dich noch nicht beworben</p></div>
+                <div ><button class="kündigung-button" style="width: auto;" onclick="bewerbungZurueckziehen">Zurückziehen</button></div>
+        </div>
+    </div>
+
+    <script src="js/css-setup.js"></script>
+    <script src="js/KontoA-setup.js"></script>
+
+</body>
+</html>

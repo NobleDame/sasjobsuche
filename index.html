@@ -1,33 +1,49 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+    <link rel="stylesheet" href="css/zstyles.css">
+    <title>Document</title>
 </head>
+<body onload="updateCSS();buildWebsite()">
 
-<body>
-<div class="headline">
-  <h1>Jobsuche Helmoland</h1>
-</div>
+    <div id="fixedbar">
+        <div id="headline">Jobsuche</div>
+        <div id="account-element">
+            <a href="kontoA.html"><img src="img/KontoIcon.png" alt="Konto Icon"></a>
+        </div>
+        <div id="searchbar">
+        </div>
+    </div>
+    <div id="fixed-padding-expander"></div>
 
-  <script src="js/app.js"></script>
+
+    <div id="result-count"><p>71</p><p> Unternehmen</p></div>
+
+    <div id="all-info-container">
+
+        <div class="company-info-container">
+            <div class="company-info-box">
+                <div class="company-name"><p>SchwarzGroup</p></div>
+                <div class="company-description"><p>Wir bieten viele Jobs an! Zu fairen Bedingungen</p></div>
+                <div class="hourlyrate"><p>Gehalt: </p>  <p>13</p>  <p>L.</p></div>
+            </div>
+            <div class="company-bottom-bar">
+                <button class="company-more-button">
+                    Bewerben
+                </button>
+                <div class="free-places">
+                    <p>16</p><p>Pl.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/website-builder.js"></script>
+    <script src="js/css-setup.js"></script>
+
 </body>
-
 </html>
